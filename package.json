@@ -2,12 +2,14 @@
   "name": "portafolio_web_jjr",
   "version": "1.0.0",
   "description": "Portafolio Web JJR",
-  "homepage": "http://juanjoserendon13.github.io/portfolio",
+  "homepage": "http://juanjoserendon13.github.io/portfolio-reactjs",
   "main": "/build/app.js",
   "scripts": {
     "build": "webpack --colors",
     "serve": "webpack-dev-server --content-base build/ --colors --progress",
-    "start": "npm run build && npm run serve"
+    "start": "npm run build && npm run serve",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "Juan Jose Rendon",
   "license": "MIT",
@@ -28,6 +30,7 @@
     "webpack-dev-server": "^2.7.1"
   },
   "dependencies": {
+    "gh-pages": "^1.0.0",
     "normalize-css": "^2.3.1",
     "prop-types": "^15.6.0",
     "react": "^15.6.1",
