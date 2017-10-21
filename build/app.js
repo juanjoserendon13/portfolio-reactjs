@@ -57,7 +57,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/";
+/******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 117);
@@ -25055,11 +25055,11 @@ var _reactScrollableAnchor = __webpack_require__(69);
 
 var _reactScrollableAnchor2 = _interopRequireDefault(_reactScrollableAnchor);
 
-var _reactResponsive = __webpack_require__(292);
+var _reactResponsive = __webpack_require__(293);
 
 var _reactResponsive2 = _interopRequireDefault(_reactResponsive);
 
-var _logo_ = __webpack_require__(293);
+var _logo_ = __webpack_require__(294);
 
 var _logo_2 = _interopRequireDefault(_logo_);
 
@@ -25081,7 +25081,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 // Global styles
-__webpack_require__(294);
+__webpack_require__(295);
 
 var App = function (_Component) {
   _inherits(App, _Component);
@@ -38768,7 +38768,7 @@ exports = module.exports = __webpack_require__(21)(undefined);
 
 
 // module
-exports.push([module.i, "\r\n*{\r\n  margin:0;\r\n /*  border: 1px solid gray; */\r\n}\r\n.styles__grid__H-Nmj{\r\n  display: grid;\r\n  grid-auto-rows: auto;\r\n  /*padding: 0 15px;*/\r\n}\r\n\r\n.styles__header__hJHhq{\r\n  z-index: 999999;\r\n  filter: grayscale(30%);\r\n  /*100vw*15/320=calculo de padding en vw*/\r\n  padding: 4.6875vw 4.6875vw 0 4.6875vw;\r\n  /* background-image: url(\"../../img/back_header.jpg\"); */\r\n  background-image: url(\"/img/back_header.jpg\");\r\n  background-repeat: no-repeat;\r\n  background-size: 100% 100%;\r\n  background-position: center;\r\n  /*width: 100vw; */\r\n  /*height:50vw;*/\r\n  /*calc(100vw*heightImage/widthImage)*/\r\n  height: calc(100vw*3648/5472);\r\n  display: grid;\r\n  grid-auto-columns:1fr;\r\n  grid-template-rows: repeat(4,1fr);\r\n  grid-column-gap:3.125vw;\r\n\r\n}\r\n.styles__backlog__2iJy0{\r\n  position: fixed;\r\n  width: 100%;\r\n  height: 19vw;\r\n  /*position: absolute;*/\r\n  top: 0;\r\n  left: 0;\r\n  background-color: #424242;\r\n  transition: opacity 1s ease;\r\n}\r\n\r\n.styles__logo__i92A1{\r\n  /*position: fixed;*/\r\n  z-index: 100;\r\n  grid-column: 1 / 3;\r\n  grid-row: 1 / 2;\r\n  /**/\r\n}\r\n.styles__navi__2CmNw{\r\n  /*background-color: red;*/\r\n  width: 100%;\r\n  grid-column: 4 / 5;\r\n  grid-row: 1 / 2;\r\n  justify-self: end;\r\n\r\n}\r\n\r\n.styles__descr__fMgrY{\r\n  grid-column: 1 / 5;\r\n  grid-row: 3 / 4;\r\n\r\n  justify-self: center;\r\n  align-self: center;\r\n}\r\n.styles__descr__fMgrY>a{\r\n  margin-right:0.3em; \r\n\r\n}\r\n/*Animation text*/\r\n.styles__highlight__1upVt{\r\n  color:#fff;\r\n  font-size: 5.625vw;\r\n  font-family: 'Akrobat';\r\n  text-decoration: none;\r\n  background-image: linear-gradient(to right, rgba(244,67,54,0) 50%, #F44336 50%);\r\n  background-position: 0;\r\n  background-size: 201% auto;\r\n  transition: background-position 0.5s;\r\n  transition-timing-function: cubic-bezier(.62,.4,.08,1.01);\r\n}\r\n\r\n.styles__highlight__1upVt:hover{\r\n  background-position: -99% 0;\r\n}\r\n.styles__content__3VAT-{\r\n  width: 100%;\r\n  display: grid;\r\n  /*height: auto;*/\r\n  grid-template-columns:1fr;\r\n  grid-auto-rows: 78.125vw;\r\n  /*grid-auto-rows: 1fr;*/\r\n}\r\n.styles__about__377VE{\r\n  /*width: 100%;\r\n  height: auto;*/\r\n  grid-auto-columns:1fr;\r\n  grid-auto-rows:1fr;\r\n}\r\n.styles__contact__v5UBj{\r\n  /*width: 100%;*/\r\n  /*grid-template-columns:1fr;*/\r\n  /*grid-auto-rows:1fr;*/\r\n}\r\n\r\n@media only screen and (min-width: 768px) {\r\n  .styles__header__hJHhq{\r\n    padding: 4.6875vw 4.6875vw 0 4.6875vw;\r\n    /*background-image: url(\"../../img/back_header.jpg\");*/\r\n    background-repeat: no-repeat;\r\n    background-size: cover;\r\n    background-position: center;\r\n\r\n    /*calc(100vw*heightImage/widthImage)*/\r\n    /*height: calc(100vw*3648/5472);*/\r\n    height: 90vh;\r\n    display: grid;\r\n    grid-auto-columns:1fr;\r\n    grid-template-rows: repeat(4,1fr);\r\n    grid-column-gap:3.125vw;\r\n\r\n  }\r\n  .styles__navigation___eTMo{\r\n    top: 0;\r\n    grid-column: 1 / 7;\r\n    padding: 15px 0px 15px 0px;\r\n    position: fixed;\r\n    width: 100%;\r\n    background-color: rgba(66,66,66,0);\r\n    display: grid;\r\n    grid-template-columns: repeat(6,1fr);\r\n    transition: all 0.5s;\r\n  }\r\n  .styles__logo__i92A1{\r\n    padding-left: 15px;\r\n    grid-column: 1 / 3;\r\n    max-width: 350px;\r\n  }\r\n  .styles__navi__2CmNw{\r\n    padding-right: 15px;\r\n    grid-column: 3 / 7;\r\n    font-family: 'Chamfort Family';\r\n    font-weight: bold;\r\n    font-size: 15px;\r\n    display: grid;\r\n    grid-template-columns: 1fr 1fr 1fr 1fr;\r\n    align-items: center;\r\n    max-width: 1000px;\r\n    /*grid-column-gap: 10px;*/\r\n  }\r\n  .styles__navi__2CmNw>a{\r\n    text-align: center;\r\n    justify-self: center;\r\n    text-decoration: none;\r\n    color: #fff;\r\n  }\r\n  /*Underline Effect*/\r\n  .styles__under__3Q1Wt::after {\r\n    content: '';\r\n    display: block;\r\n    width: 0;\r\n    height: 4px;\r\n    background: #f44336;\r\n    transition: width 0.5s;\r\n    transition-timing-function: cubic-bezier(.62,.4,.08,1.01);\r\n  }\r\n\r\n  .styles__under__3Q1Wt:hover::after {\r\n    width: 100%;\r\n  }\r\n  .styles__navigation___eTMo:hover {\r\n    background-color: rgba(66,66,66,1);\r\n  }\r\n  .styles__highlight__1upVt{\r\n    font-size: 60px;\r\n  }\r\n\r\n  .styles__content__3VAT-{\r\n    display: grid;\r\n    grid-auto-rows: auto;\r\n    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));\r\n  }\r\n}\r\n\r\n/*Configuring the burger*/\r\n", ""]);
+exports.push([module.i, "\r\n*{\r\n  margin:0;\r\n /*  border: 1px solid gray; */\r\n}\r\n.styles__grid__H-Nmj{\r\n  display: grid;\r\n  grid-auto-rows: auto;\r\n  /*padding: 0 15px;*/\r\n}\r\n\r\n.styles__header__hJHhq{\r\n  z-index: 999999;\r\n  filter: grayscale(30%);\r\n  /*100vw*15/320=calculo de padding en vw*/\r\n  padding: 4.6875vw 4.6875vw 0 4.6875vw;\r\n  background-image: url(" + __webpack_require__(292) + ");\r\n  /* background-image: url(\"/img/back_header.jpg\"); */\r\n  background-repeat: no-repeat;\r\n  background-size: 100% 100%;\r\n  background-position: center;\r\n  /*width: 100vw; */\r\n  /*height:50vw;*/\r\n  /*calc(100vw*heightImage/widthImage)*/\r\n  height: calc(100vw*3648/5472);\r\n  display: grid;\r\n  grid-auto-columns:1fr;\r\n  grid-template-rows: repeat(4,1fr);\r\n  grid-column-gap:3.125vw;\r\n\r\n}\r\n.styles__backlog__2iJy0{\r\n  position: fixed;\r\n  width: 100%;\r\n  height: 19vw;\r\n  /*position: absolute;*/\r\n  top: 0;\r\n  left: 0;\r\n  background-color: #424242;\r\n  transition: opacity 1s ease;\r\n}\r\n\r\n.styles__logo__i92A1{\r\n  /*position: fixed;*/\r\n  z-index: 100;\r\n  grid-column: 1 / 3;\r\n  grid-row: 1 / 2;\r\n  /**/\r\n}\r\n.styles__navi__2CmNw{\r\n  /*background-color: red;*/\r\n  width: 100%;\r\n  grid-column: 4 / 5;\r\n  grid-row: 1 / 2;\r\n  justify-self: end;\r\n\r\n}\r\n\r\n.styles__descr__fMgrY{\r\n  grid-column: 1 / 5;\r\n  grid-row: 3 / 4;\r\n\r\n  justify-self: center;\r\n  align-self: center;\r\n}\r\n.styles__descr__fMgrY>a{\r\n  margin-right:0.3em; \r\n\r\n}\r\n/*Animation text*/\r\n.styles__highlight__1upVt{\r\n  color:#fff;\r\n  font-size: 5.625vw;\r\n  font-family: 'Akrobat';\r\n  text-decoration: none;\r\n  background-image: linear-gradient(to right, rgba(244,67,54,0) 50%, #F44336 50%);\r\n  background-position: 0;\r\n  background-size: 201% auto;\r\n  transition: background-position 0.5s;\r\n  transition-timing-function: cubic-bezier(.62,.4,.08,1.01);\r\n}\r\n\r\n.styles__highlight__1upVt:hover{\r\n  background-position: -99% 0;\r\n}\r\n.styles__content__3VAT-{\r\n  width: 100%;\r\n  display: grid;\r\n  /*height: auto;*/\r\n  grid-template-columns:1fr;\r\n  grid-auto-rows: 78.125vw;\r\n  /*grid-auto-rows: 1fr;*/\r\n}\r\n.styles__about__377VE{\r\n  /*width: 100%;\r\n  height: auto;*/\r\n  grid-auto-columns:1fr;\r\n  grid-auto-rows:1fr;\r\n}\r\n.styles__contact__v5UBj{\r\n  /*width: 100%;*/\r\n  /*grid-template-columns:1fr;*/\r\n  /*grid-auto-rows:1fr;*/\r\n}\r\n\r\n@media only screen and (min-width: 768px) {\r\n  .styles__header__hJHhq{\r\n    padding: 4.6875vw 4.6875vw 0 4.6875vw;\r\n    /*background-image: url(\"../../img/back_header.jpg\");*/\r\n    background-repeat: no-repeat;\r\n    background-size: cover;\r\n    background-position: center;\r\n\r\n    /*calc(100vw*heightImage/widthImage)*/\r\n    /*height: calc(100vw*3648/5472);*/\r\n    height: 90vh;\r\n    display: grid;\r\n    grid-auto-columns:1fr;\r\n    grid-template-rows: repeat(4,1fr);\r\n    grid-column-gap:3.125vw;\r\n\r\n  }\r\n  .styles__navigation___eTMo{\r\n    top: 0;\r\n    grid-column: 1 / 7;\r\n    padding: 15px 0px 15px 0px;\r\n    position: fixed;\r\n    width: 100%;\r\n    background-color: rgba(66,66,66,0);\r\n    display: grid;\r\n    grid-template-columns: repeat(6,1fr);\r\n    transition: all 0.5s;\r\n  }\r\n  .styles__logo__i92A1{\r\n    padding-left: 15px;\r\n    grid-column: 1 / 3;\r\n    max-width: 350px;\r\n  }\r\n  .styles__navi__2CmNw{\r\n    padding-right: 15px;\r\n    grid-column: 3 / 7;\r\n    font-family: 'Chamfort Family';\r\n    font-weight: bold;\r\n    font-size: 15px;\r\n    display: grid;\r\n    grid-template-columns: 1fr 1fr 1fr 1fr;\r\n    align-items: center;\r\n    max-width: 1000px;\r\n    /*grid-column-gap: 10px;*/\r\n  }\r\n  .styles__navi__2CmNw>a{\r\n    text-align: center;\r\n    justify-self: center;\r\n    text-decoration: none;\r\n    color: #fff;\r\n  }\r\n  /*Underline Effect*/\r\n  .styles__under__3Q1Wt::after {\r\n    content: '';\r\n    display: block;\r\n    width: 0;\r\n    height: 4px;\r\n    background: #f44336;\r\n    transition: width 0.5s;\r\n    transition-timing-function: cubic-bezier(.62,.4,.08,1.01);\r\n  }\r\n\r\n  .styles__under__3Q1Wt:hover::after {\r\n    width: 100%;\r\n  }\r\n  .styles__navigation___eTMo:hover {\r\n    background-color: rgba(66,66,66,1);\r\n  }\r\n  .styles__highlight__1upVt{\r\n    font-size: 60px;\r\n  }\r\n\r\n  .styles__content__3VAT-{\r\n    display: grid;\r\n    grid-auto-rows: auto;\r\n    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));\r\n  }\r\n}\r\n\r\n/*Configuring the burger*/\r\n", ""]);
 
 // exports
 exports.locals = {
@@ -38788,6 +38788,12 @@ exports.locals = {
 
 /***/ }),
 /* 292 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/back_header.jpg";
+
+/***/ }),
+/* 293 */
 /***/ (function(module, exports, __webpack_require__) {
 
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -40406,19 +40412,19 @@ module.exports = exports['default'];
 //# sourceMappingURL=react-responsive.js.map
 
 /***/ }),
-/* 293 */
+/* 294 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/logo_320.svg";
 
 /***/ }),
-/* 294 */
+/* 295 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(295);
+var content = __webpack_require__(296);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -40443,7 +40449,7 @@ if(false) {
 }
 
 /***/ }),
-/* 295 */
+/* 296 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(21)(undefined);
@@ -40451,55 +40457,55 @@ exports = module.exports = __webpack_require__(21)(undefined);
 
 
 // module
-exports.push([module.i, "/*// FONTS LOAD*/\r\n/*import { injectGlobal } from 'styled-components'*/\r\n\r\n@font-face {\r\n  font-family: 'Chamfort Family';\r\n  src: url(" + __webpack_require__(113) + ");\r\n  src: url(" + __webpack_require__(113) + "?#iefix) format('embedded-opentype'),\r\n  url(" + __webpack_require__(296) + ") format('woff'),\r\n  url(" + __webpack_require__(297) + ") format('truetype');\r\n  /*src: url('../../fonts/ChamfortFamily-Bold.ttf');\r\n  src: url('../../fonts/ChamfortFamily-Bold.eot');\r\n  src: url('../../fonts/ChamfortFamily-Bold.woff');*/\r\n  font-weight: bold;\r\n  font-style: normal;\r\n}\r\n\r\n@font-face {\r\n  font-family: 'Akrobat';\r\n  src: url(" + __webpack_require__(114) + ");\r\n  src: url(" + __webpack_require__(114) + "?#iefix) format('embedded-opentype'),\r\n  url(" + __webpack_require__(298) + ") format('woff'),\r\n  url(" + __webpack_require__(299) + ") format('truetype');\r\n  /*src: url('../../fonts/Akrobat-Regular.eot');\r\n  src: url('../../fonts/Akrobat-Regular.woff');\r\n  src: url('../../fonts/Akrobat-Regular.ttf');*/\r\n  font-weight: 500;\r\n  font-style: normal;\r\n}\r\n\r\n@font-face {\r\n  font-family: 'Akrobat';\r\n  src: url(" + __webpack_require__(115) + ");\r\n  src: url(" + __webpack_require__(115) + "?#iefix) format('embedded-opentype'),\r\n  url(" + __webpack_require__(300) + ") format('woff'),\r\n  url(" + __webpack_require__(301) + ") format('truetype');\r\n  /*src: url('../../fonts/Akrobat-Light.eot');\r\n  src: url('../../fonts/Akrobat-Light.woff');\r\n  src: url('../../fonts/Akrobat-Light.ttf');*/\r\n  font-weight: 300;\r\n  font-style: normal;\r\n}\r\n\r\n@font-face {\r\n  font-family: 'Akrobat';\r\n  src: url(" + __webpack_require__(116) + ");\r\n  src: url(" + __webpack_require__(116) + "?#iefix) format('embedded-opentype'),\r\n  url(" + __webpack_require__(302) + ") format('woff'),\r\n  url(" + __webpack_require__(303) + ") format('truetype');\r\n  /*src: url('../../fonts/Akrobat-Bold.eot');\r\n  src: url('../../fonts/Akrobat-Bold.woff');\r\n  src: url('../../fonts/Akrobat-Bold.ttf');*/\r\n\r\n\r\n  font-weight: bold;\r\n  font-style: normal;\r\n}\r\n", ""]);
+exports.push([module.i, "/*// FONTS LOAD*/\r\n/*import { injectGlobal } from 'styled-components'*/\r\n\r\n@font-face {\r\n  font-family: 'Chamfort Family';\r\n  src: url(" + __webpack_require__(113) + ");\r\n  src: url(" + __webpack_require__(113) + "?#iefix) format('embedded-opentype'),\r\n  url(" + __webpack_require__(297) + ") format('woff'),\r\n  url(" + __webpack_require__(298) + ") format('truetype');\r\n  /*src: url('../../fonts/ChamfortFamily-Bold.ttf');\r\n  src: url('../../fonts/ChamfortFamily-Bold.eot');\r\n  src: url('../../fonts/ChamfortFamily-Bold.woff');*/\r\n  font-weight: bold;\r\n  font-style: normal;\r\n}\r\n\r\n@font-face {\r\n  font-family: 'Akrobat';\r\n  src: url(" + __webpack_require__(114) + ");\r\n  src: url(" + __webpack_require__(114) + "?#iefix) format('embedded-opentype'),\r\n  url(" + __webpack_require__(299) + ") format('woff'),\r\n  url(" + __webpack_require__(300) + ") format('truetype');\r\n  /*src: url('../../fonts/Akrobat-Regular.eot');\r\n  src: url('../../fonts/Akrobat-Regular.woff');\r\n  src: url('../../fonts/Akrobat-Regular.ttf');*/\r\n  font-weight: 500;\r\n  font-style: normal;\r\n}\r\n\r\n@font-face {\r\n  font-family: 'Akrobat';\r\n  src: url(" + __webpack_require__(115) + ");\r\n  src: url(" + __webpack_require__(115) + "?#iefix) format('embedded-opentype'),\r\n  url(" + __webpack_require__(301) + ") format('woff'),\r\n  url(" + __webpack_require__(302) + ") format('truetype');\r\n  /*src: url('../../fonts/Akrobat-Light.eot');\r\n  src: url('../../fonts/Akrobat-Light.woff');\r\n  src: url('../../fonts/Akrobat-Light.ttf');*/\r\n  font-weight: 300;\r\n  font-style: normal;\r\n}\r\n\r\n@font-face {\r\n  font-family: 'Akrobat';\r\n  src: url(" + __webpack_require__(116) + ");\r\n  src: url(" + __webpack_require__(116) + "?#iefix) format('embedded-opentype'),\r\n  url(" + __webpack_require__(303) + ") format('woff'),\r\n  url(" + __webpack_require__(304) + ") format('truetype');\r\n  /*src: url('../../fonts/Akrobat-Bold.eot');\r\n  src: url('../../fonts/Akrobat-Bold.woff');\r\n  src: url('../../fonts/Akrobat-Bold.ttf');*/\r\n\r\n\r\n  font-weight: bold;\r\n  font-style: normal;\r\n}\r\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 296 */
+/* 297 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "fonts/ChamfortFamily-Bold.woff";
 
 /***/ }),
-/* 297 */
+/* 298 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "fonts/ChamfortFamily-Bold.ttf";
 
 /***/ }),
-/* 298 */
+/* 299 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "fonts/Akrobat-Regular.woff";
 
 /***/ }),
-/* 299 */
+/* 300 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "fonts/Akrobat-Regular.ttf";
 
 /***/ }),
-/* 300 */
+/* 301 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "fonts/Akrobat-Light.woff";
 
 /***/ }),
-/* 301 */
+/* 302 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "fonts/Akrobat-Light.ttf";
 
 /***/ }),
-/* 302 */
+/* 303 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "fonts/Akrobat-Bold.woff";
 
 /***/ }),
-/* 303 */
+/* 304 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "fonts/Akrobat-Bold.ttf";

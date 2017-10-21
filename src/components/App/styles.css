@@ -14,8 +14,8 @@
   filter: grayscale(30%);
   /*100vw*15/320=calculo de padding en vw*/
   padding: 4.6875vw 4.6875vw 0 4.6875vw;
-  /* background-image: url("../../img/back_header.jpg"); */
-  background-image: url("/img/back_header.jpg");
+  background-image: url("../../img/back_header.jpg");
+  /* background-image: url("/img/back_header.jpg"); */
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
