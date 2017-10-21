@@ -10,7 +10,7 @@
     "serve": "webpack-dev-server --content-base build/ --colors --progress",
     "start": "npm run build && npm run serve",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d production"
   },
   "author": "Juan Jose Rendon",
   "license": "MIT",
