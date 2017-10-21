@@ -5,6 +5,7 @@
   "homepage": "http://juanjoserendon13.github.io/portfolio-reactjs",
   "main": "/build/app.js",
   "scripts": {
+    "production": "webpack -p",
     "build": "webpack --colors",
     "serve": "webpack-dev-server --content-base build/ --colors --progress",
     "start": "npm run build && npm run serve",
