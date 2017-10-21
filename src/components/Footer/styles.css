@@ -1,0 +1,166 @@
+.root{
+  /*width: 100%;*/
+  background-color: #424242;
+  padding: 4.6875vw 4.6875vw 4.6875vw 4.6875vw;
+  display: grid;
+  grid-template-columns:repeat(6,1fr);
+  grid-template-columns:1fr;
+  grid-auto-rows:auto;
+  grid-column-gap:3.125vw;
+  grid-row-gap:3.125vw;
+}
+
+.mylog{
+  justify-self: center;
+
+}
+.mylog>img{
+  height: 18vw;
+}
+.footnav{
+  justify-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10vw;
+  align-items: center;
+}
+.footnav a{
+  font-family: 'Chamfort Family';
+  font-weight: bold;
+  font-size: 4.375vw;
+  color: #fff;
+  text-decoration: none;
+}
+.socialnet{
+  justify-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10.9375vw;
+}
+.copy{
+  color: #fff;
+  font-size: 4.375vw;
+  font-family: 'Akrobat';
+  font-weight: 300;
+  text-align: center;
+}
+
+/*Transition SLIDE*/
+.icon {
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  width: 15vw;
+  height: 15vw;
+  font-size: 0;
+  text-indent: -9999px;
+  /*  border-radius:60px;*/
+}
+
+.iconmono {
+  background: url("../../img/sprite2.png");
+  background-size: 41.5625vw 30vw;
+  background-color: #5e5e5e;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+
+/* facebook */
+.iconmono.behance {
+  background-position: 0 0;
+}
+
+.iconmono.behance:hover {
+  background-color: #1769ff;
+  background-position: 0 -15vw;
+}
+
+/* twitter */
+.iconmono.linkedin {
+  background-position: -15vw 0;
+}
+
+.iconmono.linkedin:hover {
+  background-color: #2489be;
+  background-position: -15vw -15vw;
+}
+
+/* github */
+.iconmono.github {
+  background-position: -28vw 0;
+}
+
+.iconmono.github:hover {
+  background-color: #fff;
+  background-position: -28vw -15vw;
+}
+@media only screen and (min-width: 768px) {
+  .root{
+    padding: 25px 25px 25px 25px;
+    grid-column-gap:20px;
+    grid-row-gap:25px;
+  }
+  .mylog>img{
+    height: 80px;
+  }
+  .footnav{
+    grid-column-gap: 60px;
+    align-items: center;
+  }
+  .footnav a{
+    font-size: 24px;
+    justify-self: center;
+  }
+  /*Underline Effect*/
+  .under::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background: #f44336;
+    transition: width 0.5s;
+    transition-timing-function: cubic-bezier(.62,.4,.08,1.01);
+  }
+
+  .under:hover::after {
+    width: 100%;
+  }
+  .socialnet{
+    grid-column-gap: 45px;
+  }
+  .copy{
+    font-size: 18px;
+  }
+  /*Transition SLIDE*/
+  .icon {
+    width: 48px;
+    height: 48px;
+  }
+  .iconmono {
+    background-size: 133px 96px;
+    transition: background 0.3s;
+  }
+  /* facebook */
+  .iconmono.behance {
+    background-position: 0 0;
+  }
+  .iconmono.behance:hover {
+    background-position: 0 -48px;
+  }
+  /* twitter */
+  .iconmono.linkedin {
+    background-position: -48px 0;
+  }
+  .iconmono.linkedin:hover {
+    background-position: -48px -48px;
+  }
+
+  /* github */
+  .iconmono.github {
+    background-position: -89px 0;
+  }
+  .iconmono.github:hover {
+
+    background-position: -89px -48px;
+  }
+}

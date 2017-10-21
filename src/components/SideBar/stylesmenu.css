@@ -1,0 +1,10 @@
+a.item {
+  color: #fff;
+  transition: color 0.5s ease-out;
+}
+a.item:hover {
+  color: #f44336;
+}
+.itemicon{
+  margin-right: 2vw;
+}

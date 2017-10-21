@@ -1,0 +1,33 @@
+.grid{
+    display: grid;
+    grid-auto-columns:1fr;
+    grid-auto-rows: minmax(50px,auto);
+    grid-template-areas: 
+        "uno"
+        "dos";
+    grid-gap: 1em;
+
+}
+@media (min-width: 640px){
+    .grid{
+        grid-auto-columns:1fr;
+        grid-auto-rows: minmax(50px,auto);
+        grid-template-areas: 
+            "uno dos";
+
+    }
+
+}
+SecDos{
+    border: 1px solid #000;
+}
+
+.uno{
+    grid-area: uno;
+
+
+}
+.dos{
+    grid-area: dos;
+
+}

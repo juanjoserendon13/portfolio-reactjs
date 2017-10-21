@@ -1,0 +1,107 @@
+.root{
+  /*width: 100%;*/
+  padding: 4.6875vw 4.6875vw 4.6875vw 4.6875vw;
+  display: grid;
+  grid-auto-columns: repeat(6,1fr);
+  /*grid-template-rows: repeat(11,1fr);*/
+  grid-column-gap:3.125vw;
+}
+.titlesec{
+  /*padding:2vw 0 2vw 0;*/
+  border-left: 1.5625vw solid #ffc107;
+  grid-column: 1 / 3;
+  font-family: 'Chamfort Family';
+  font-weight: bold;
+  font-size: 5vw;
+  color: #424242;
+  align-self: center;
+}
+.formu{
+  width: 100%;
+  grid-column: 1 / 7;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-row-gap: 2.5vw;
+  font-family: 'Akrobat';
+  font-weight: 300;
+  font-size: 5vw;
+}
+.titleform{
+  width: 100%;
+  font-family: 'Akrobat';
+  font-weight: bold;
+  font-size: 6.875vw;
+  color: #424242;
+}
+.titleinp{
+  width: 100%;
+  font-family: 'Akrobat';
+  font-weight: bold;
+  color: #424242;
+}
+input[type=text],input[type=email],textarea {
+
+  width: 100%;
+  height: 7vw;
+  border: 2px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 0.5vw;
+  outline: none;
+}
+.areatxt{
+  resize:vertical;
+  height: 20vw;
+}
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+  border: 2px solid #f44336;
+}
+.send{
+  border-radius: 1.5vw;
+  /*align-self: center;*/
+  justify-self: center;
+  width: 40vw;
+  height: 14vw;
+  font-family: 'Chamfort Family';
+  font-weight: bold;
+  font-size: 6.25vw;
+  /*padding: 3vw;*/
+  color: #fff;
+  background-color: #f44336;
+  border: none;
+  transition: all 1s;
+  transition-timing-function: cubic-bezier(.17,.85,.28,1.01);
+}
+.send:hover{
+  transform: scale(1.1);
+  color: #424242;
+  background-color: #ffc107;
+}
+@media only screen and (min-width: 768px) {
+  .formu{
+    max-width: 1000px;
+    justify-self: center;
+    font-size: 25px;
+  }
+  .titlesec{
+    padding: 5px 0 5px 0;
+    border-left: 8px solid #ffc107;
+  }
+  .titleform{
+    font-size: 30px;
+  }
+  input[type=text],input[type=email],textarea {
+    height: 50px;
+  }
+  .areatxt{
+    height: 100px;
+  }
+  .send{
+    border-radius: 0.5vw;
+    font-size: 35px;
+    width: 250px;
+    height: 90px;
+
+  }
+}

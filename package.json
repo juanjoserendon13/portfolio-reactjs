@@ -1,0 +1,41 @@
+{
+  "name": "portafolio_web_jjr",
+  "version": "1.0.0",
+  "description": "Portafolio Web JJR",
+  "homepage": "http://juanjoserendon13.github.io/portfolio",
+  "main": "/build/app.js",
+  "scripts": {
+    "build": "webpack --colors",
+    "serve": "webpack-dev-server --content-base build/ --colors --progress",
+    "start": "npm run build && npm run serve"
+  },
+  "author": "Juan Jose Rendon",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.5",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^1.1.4",
+    "html-webpack-plugin": "^2.30.1",
+    "image-loader": "0.0.1",
+    "style-loader": "^0.18.2",
+    "styled-components": "^2.2.1",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1"
+  },
+  "dependencies": {
+    "normalize-css": "^2.3.1",
+    "prop-types": "^15.6.0",
+    "react": "^15.6.1",
+    "react-burger-menu": "^2.1.6",
+    "react-dom": "^15.6.1",
+    "react-responsive": "^2.0.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scrollable-anchor": "^0.5.0"
+  }
+}
