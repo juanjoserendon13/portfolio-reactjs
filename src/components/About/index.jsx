@@ -10,7 +10,9 @@ class About extends Component {
         <ScrollableAnchor id={'aboutme'}>
           <h1 className={styles.titlesec}>About Me</h1>
         </ScrollableAnchor>
-        <div className={styles.profile}><a href='#aboutme'><img src={imgprofile} alt='Juan Jose Pic' /></a></div>
+        <div className={styles.profile}>
+          <a href='#aboutme'><img src={imgprofile} alt='Juan Jose Pic' /></a>
+        </div>
         <p className={styles.aboutme}>
           ¡Hi! I am an <span className={styles.highlight}>interactive media designer</span> from Cali, Colombia.
           I love use new technologies especially in web development.

@@ -2,7 +2,7 @@
   padding: 4.6875vw 4.6875vw 0 4.6875vw;
   display: grid;
   grid-auto-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  /*grid-template-rows: repeat(6, 1fr);*/
   grid-column-gap: 3.125vw;
 }
 
@@ -20,18 +20,23 @@
 }
 
 .profile {
-  grid-column: 3 / 5;
+  grid-column: 1 / 7;
   grid-row: 2 / 4;
+
+
 }
 
 .profile>a>img {
-  width: 100%;
+  width: 40%;
   height: auto;
   z-index: 999;
   /*width: 28.125vw;*/
   transition: all 0.5s;
   filter: drop-shadow(0.5vw 0.5vw 8px rgba(0, 0, 0, .7));
   transition-timing-function: cubic-bezier(.65, -0.45, .3, 1.6);
+  display: block;
+  padding-bottom: 1em;
+  margin: 0 auto;
 }
 
 .profile>a>img:hover {
@@ -63,16 +68,22 @@
   .titlesec {
     padding: 5px 0 5px 0;
     border-left: 8px solid #ffc107;
+    font-size: 45px;
   }
   .profile {
-    align-self: center;
+
     /*  justify-self: center; */
   }
   .profile>a>img {
-    width: 70%;
-    margin-left: 15%; 
+    width: 350px;
+    /*margin-left: 15%;*/
+    display: block;
+    margin: 0 auto;
   }
   .profile>a>img:hover {
     transform: scale(1.2);
+  }
+  .aboutme{
+    font-size:40px;
   }
 }

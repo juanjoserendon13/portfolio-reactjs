@@ -1,7 +1,7 @@
 
 *{
   margin:0;
- /*  border: 1px solid gray; */
+   /*border: 1px solid gray; */
 }
 .grid{
   display: grid;
@@ -64,7 +64,7 @@
   align-self: center;
 }
 .descr>a{
-  margin-right:0.3em; 
+  margin-right:0.3em;
 
 }
 /*Animation text*/
