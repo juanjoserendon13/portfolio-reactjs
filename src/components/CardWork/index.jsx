@@ -9,29 +9,31 @@ const propTypes = {
   projectImg: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   desc: PropTypes.string.isRequired,
-  img: PropTypes.array
+  img: PropTypes.array.isRequired,
+  behance: PropTypes.string.isRequired,
+  github: PropTypes.string.isRequired
 }
 
+
 class CardWork extends Component {
-  constructor () {
-    super()
+  constructor (props) {
+    super(props)
     this.state = {
       showModal: false,
       active: false
     }
+
     this.handleOpenModal = this.handleOpenModal.bind(this)
     this.handleCloseModal = this.handleCloseModal.bind(this)
   }
   handleOpenModal (event) {
     event.preventDefault()
     this.setState({showModal: true, active: true})
-    console.log("ESTADO transition: " + this.state.active)
-
   }
 
   handleCloseModal (event) {
     event.preventDefault()
-    this.setState({ showModal: false, active: false})
+    this.setState({showModal: false, active: false})
   }
 
   render () {
@@ -50,16 +52,37 @@ class CardWork extends Component {
         {/* Hidden content*/}
           <ReactModal
             isOpen={this.state.showModal}
-            contentLabel="Minimal Modal Example"
+            contentLabel="Modal"
             // className={`styles.modal ${active ? styles.animated : ''}`}
             className={[styles.modal,  active ? styles.animated : ''].join(' ')}
             overlayClassName={styles.overlay}>
+            {/*Iconos de navegacion*/}
             <a href=' '
-              onClick={this.handleCloseModal} className={styles.close}>
-              <span className='fa fa-times buttonclose'></span>
+            onClick={this.handleCloseModal} className={[styles.button, styles.close].join(' ')}>
+              <span className='fa fa-times'></span>
             </a>
-            <img src={this.props.projectImg} className={styles.imgProject} />
+
+            <a href={this.props.behance}
+            target="_blank" 
+            className={[styles.button, styles.behance].join(' ')}>
+              <span className='fa fa-behance'></span>
+            </a>
+
+            <a href={this.props.github}
+              target="_blank" 
+              className={[styles.button, styles.github].join(' ')}>
+              <span className='fa fa-github fa-2x'></span>
+            </a>
+          {/*Mapeo de imagenes pasadas por props*/}
+          <div className={styles.contPres}>                   
+             {this.props.img.map((im,index) => {
+              return(
+                <img src={im} className={styles.imgProject} key= {index} />
+             )
+            })} 
+          </div>
           </ReactModal>
+
 
       </div>
     )

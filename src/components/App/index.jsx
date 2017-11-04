@@ -16,19 +16,27 @@ import MediaQuery from 'react-responsive'
 // Load images
 import logo from '../../img/logo_320.svg'
 // Incevo
-import img1 from '../../img/incevo/incevo (1).jpg'
-import img2 from '../../img/incevo/incevo (2).jpg'
+import img1 from '../../img/incevo/incevo1.jpg'
+import img2 from '../../img/incevo/incevo2.jpg'
+import img3 from '../../img/incevo/incevo3.jpg'
 
+var imgs = [img1,img2,img3]
+
+import imgf1 from '../../img/followit/follow1.jpg'
+import imgf2 from '../../img/followit/follow2.jpg'
+
+var imgs2 = [imgf1,imgf2]
 // Global styles
 require('./globalstyles.css')
 
 class App extends Component {
-  
+
   render () {
     return (
       <div className={styles.grid}>
-        <MediaQuery maxWidth={768} className={styles.header}>
-          {/* <ScrollableAnchor id={'me'}> */}
+        <ScrollableAnchor id={'me'}>
+          <MediaQuery maxWidth={767} className={styles.header}>
+
 
               <div className={styles.backlog} />
               <div className={styles.logo}><img src={logo} alt="Brand Juan Jose" /></div>
@@ -40,11 +48,12 @@ class App extends Component {
                 <a href="#" className={styles.highlight}>persistent,</a>
                 <a href="#" className={styles.highlight}>loving web</a>
               </p>
-            
-          {/* </ScrollableAnchor> */}
-        </MediaQuery>
-        {/* <ScrollableAnchor id={'me'}> */}
+          </MediaQuery>
+        </ScrollableAnchor>
+
+        <ScrollableAnchor id={'me'}>
           <MediaQuery minWidth={768} className={styles.header}>
+
             <div className={styles.navigation}>
               <div className={styles.logo}><img src={logo} alt="Brand Juan Jose" /></div>
               <div className={styles.navi}>
@@ -59,45 +68,35 @@ class App extends Component {
               <a href="#" className={styles.highlight}>persistent,</a>
               <a href="#" className={styles.highlight}>loving web</a>
             </p>
+
           </MediaQuery>
-       {/*  </ScrollableAnchor> */}
+        </ScrollableAnchor>
 
 
-        {/* <ScrollableAnchor id={'work'}> */}
+        <ScrollableAnchor id={'work'}>
           <div className={styles.content}>
             <CardWork
+              key='1'
               projectImg={'https://mir-s3-cdn-cf.behance.net/projects/202/8a006757270341.Y3JvcCw1MzcsNDIwLDQ1Myw1MA.jpg'}
               title={'Incevo'}
               desc={'Interactive Design'}
-              
-            />          
+              img={imgs}
+              behance={'https://www.behance.net/gallery/57270341/Incevo'}
+              github={'https://github.com/juanjoserendon13/Incevo'}
+
+            />
             <CardWork
-              projectImg={'https://mir-s3-cdn-cf.behance.net/projects/202/8a006757270341.Y3JvcCw1MzcsNDIwLDQ1Myw1MA.jpg'}
+              key='2'
+              projectImg={'https://mir-s3-cdn-cf.behance.net/projects/202/564dfc56766797.Y3JvcCw5ODcsNzczLDExOSwyMjY.jpg'}
               title={'Follow It'}
               desc={'Standalone App'}
+              img={imgs2}
+              behance={'https://www.behance.net/gallery/56766797/Follow-It'}
+              github={'https://github.com/juanjoserendon13/Follow_It_app'}
             />
-            <CardWork
-              projectImg={'https://mir-s3-cdn-cf.behance.net/projects/202/8a006757270341.Y3JvcCw1MzcsNDIwLDQ1Myw1MA.jpg'}
-              title={'Incevo'}
-              desc={'Interactive Design'}
-            />
-            <CardWork
-              projectImg={'https://mir-s3-cdn-cf.behance.net/projects/202/8a006757270341.Y3JvcCw1MzcsNDIwLDQ1Myw1MA.jpg'}
-              title={'Follow It'}
-              desc={'Standalone App'}
-            />
-            <CardWork
-              projectImg={'https://mir-s3-cdn-cf.behance.net/projects/202/8a006757270341.Y3JvcCw1MzcsNDIwLDQ1Myw1MA.jpg'}
-              title={'Incevo'}
-              desc={'Interactive Design'}
-            />
-            <CardWork
-              projectImg={'https://mir-s3-cdn-cf.behance.net/projects/202/8a006757270341.Y3JvcCw1MzcsNDIwLDQ1Myw1MA.jpg'}
-              title={'Follow It'}
-              desc={'Standalone App'}
-            />
+            
           </div>
-        {/* </ScrollableAnchor> */}
+        </ScrollableAnchor>
 
         {/* <ScrollableAnchor id={'aboutme'}> */}
         <About className={styles.about} />
@@ -109,7 +108,7 @@ class App extends Component {
 
         <Footer />
 
-      </div>
+       </div>
       // <HashRouter>
       //   <div>
       //     <Route exact={true} path='/' render={() => (
@@ -121,7 +120,7 @@ class App extends Component {
       //     )} />
       //
       //   </div>
-      // </HashRouter>
+      // </HashRouter> */
 
     )
   }

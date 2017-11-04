@@ -9,8 +9,8 @@ class Footer extends Component {
       <div className={styles.root}>
         <div className={styles.mylog}><img src={logo}></img></div>
         <div className={styles.footnav}>
-          <a className={styles.under} href="#">My Work</a>
-          <a className={styles.under} href="#">About Me</a>
+          <a className={styles.under} href="#work">My Work</a>
+          <a className={styles.under} href="#aboutme">About Me</a>
         </div>
         <div className={styles.socialnet}>
           <a href="https://www.behance.net/juancho217" className={styles.icon + ' ' + styles.iconmono + ' ' + styles.behance} target="_blank">Behance</a>
