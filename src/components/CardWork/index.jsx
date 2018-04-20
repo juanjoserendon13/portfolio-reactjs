@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import ReactModal from 'react-modal';
 import styles from './styles.css';
 
-import ReactModal from 'react-modal';
-import { CSSTransition, transit } from 'react-css-transition';
 
 const propTypes = {
   projectImg: PropTypes.string.isRequired,
@@ -42,7 +41,7 @@ class CardWork extends Component {
       <div className={styles.root} >
         <div className={styles.imgcont}>
           <a href=" " onClick={this.handleOpenModal}>
-            <img className={styles.backimg} src={this.props.projectImg} />
+            <img className={styles.backimg} src={this.props.projectImg} alt="" />
           </a>
           <div className={styles.cont}>
             <span className={styles.title}>{this.props.title}</span>
@@ -56,13 +55,13 @@ class CardWork extends Component {
             // className={`styles.modal ${active ? styles.animated : ''}`}
           className={[styles.modal, active ? styles.animated : ''].join(' ')}
           overlayClassName={styles.overlay}
-          >
+        >
           {/* Iconos de navegacion */}
           <a
             href=" "
             onClick={this.handleCloseModal}
             className={[styles.button, styles.close].join(' ')}
-            >
+          >
             <span className="fa fa-times" />
           </a>
 
@@ -70,7 +69,7 @@ class CardWork extends Component {
             href={this.props.behance}
             target="_blank"
             className={[styles.button, styles.behance].join(' ')}
-            >
+          >
             <span className="fa fa-behance" />
           </a>
 
@@ -78,13 +77,13 @@ class CardWork extends Component {
             href={this.props.github}
             target="_blank"
             className={[styles.button, styles.github].join(' ')}
-            >
+          >
             <span className="fa fa-github fa-2x" />
           </a>
           {/* Mapeo de imagenes pasadas por props */}
           <div className={styles.contPres}>
             {this.props.img.map((im, index) => (
-              <img src={im} className={styles.imgProject} key={index} />
+              <img src={im} className={styles.imgProject} key={index} alt="" />
              ))}
           </div>
         </ReactModal>

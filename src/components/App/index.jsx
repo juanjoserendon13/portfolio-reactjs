@@ -1,5 +1,4 @@
-
-import React, { Component } from 'react';
+import React from 'react';
 // Componentes externos
 import ScrollableAnchor from 'react-scrollable-anchor';
 import MediaQuery from 'react-responsive';
@@ -135,19 +134,6 @@ const App = () => (
     <Footer />
 
   </div>
-  // <HashRouter>
-  //   <div>
-  //     <Route exact={true} path='/' render={() => (
-  //       <SecUno></SecUno>
-  //     )} />
-  //
-  //     <Route exact={true} path='/miseccion' render={() => (
-  //       <SecUno text='MI PORTAFOLIO SECCION'></SecUno>
-  //     )} />
-  //
-  //   </div>
-  // </HashRouter> */
-
 );
 
 export default App;
