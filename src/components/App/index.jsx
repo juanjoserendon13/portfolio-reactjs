@@ -42,7 +42,7 @@ require('./globalstyles.css');
 
 const App = () => (
   <div className={styles.grid}>
-    <Favicon url="https://raw.githubusercontent.com/juanjoserendon13/portfolio-reactjs/99351f7c1c2e1fbb3265bebd60fd97a95b9fa06f/src/img/logo.svg" />
+    <Favicon url="https://raw.githubusercontent.com/juanjoserendon13/portfolio-reactjs/master/src/img/favicon.png" />
     <ScrollableAnchor id="me">
       <MediaQuery maxWidth={767} className={styles.header}>
 

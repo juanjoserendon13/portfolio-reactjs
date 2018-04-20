@@ -25215,7 +25215,7 @@ var App = function App() {
   return _react2.default.createElement(
     'div',
     { className: _styles2.default.grid },
-    _react2.default.createElement(_reactFavicon2.default, { url: 'https://raw.githubusercontent.com/juanjoserendon13/portfolio-reactjs/99351f7c1c2e1fbb3265bebd60fd97a95b9fa06f/src/img/logo.svg' }),
+    _react2.default.createElement(_reactFavicon2.default, { url: 'https://raw.githubusercontent.com/juanjoserendon13/portfolio-reactjs/master/src/img/favicon.png' }),
     _react2.default.createElement(
       _reactScrollableAnchor2.default,
       { id: 'me' },
