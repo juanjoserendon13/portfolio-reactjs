@@ -2,6 +2,7 @@
   /*border: 5px solid #000;*/
   margin: 0;
   padding: 0;
+  
 }
 
 .root {
@@ -9,6 +10,7 @@
   height: 100%;
   /*height: auto;*/
   position: relative;
+  
 }
 
 .imgcont {
@@ -24,6 +26,7 @@
   height: 100%;
   opacity: 0.4;
   transition: all 1s ease-in-out;
+ 
 }
 
 .cont {
@@ -36,6 +39,7 @@
   color: #fff;
   transition: all 1s;
   transition-timing-function: cubic-bezier(.58, 0, .17, 1.37);
+  
 }
 
 .title {
@@ -117,6 +121,7 @@
   /*background-color: papayawhip;*/
   transition: all 1s ease;
   /* transition-timing-function: cubic-bezier(.59, .45, .2, 1); */
+  background-color: #fff;
 }
 /* Animation modal entering */
 
@@ -154,7 +159,7 @@
   }
   .cont {
     /*left: -30.6875vw;*/
-    left: -250px;
+    left: -350px;
     bottom: 25px;
     /*bottom: 4.6875vw;*/
     transition-timing-function: cubic-bezier(.58, 0, .17, 1.37);
