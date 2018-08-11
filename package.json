@@ -7,8 +7,8 @@
   "scripts": {
     "production": "webpack -p",
     "build": "webpack --colors",
-    "serve": "webpack-dev-server --content-base build/ --colors --progress",
-    "start": "npm run build && npm run serve",
+    "serve": "webpack-dev-server --colors --progress",
+    "start": "npm run serve",
     "predeploy": "npm run production",
     "deploy": "gh-pages -d build"
   },
