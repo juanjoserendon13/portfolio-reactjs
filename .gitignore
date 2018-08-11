@@ -15,7 +15,7 @@ pids
 lib-cov
 
 # Add package-lock
-package.lock.json
+package-lock.json
 
 # Coverage directory used by tools like istanbul
 coverage
